@@ -6,21 +6,30 @@
 #4 resposta positivas = "você é um assassino"
 #1 ou nenhuma resposta positiva = "Inocente"
 
-perguntas = ["Você conhece a vítima? \n:", "Esteve no local do Crime? \n:", "Se encontrou com a Vítima? \n:", "Trabalha com a Vítima? \n:"]
+perguntas = ["Você conhecia a vítima? \n:", "Você esteve com a vítima nesses ultimos tempos? \n:", "Você já trabalhou com a vítima? \n:", "Você ja se encontrou com a vítima? \n:"]
 cont = 0
-for x in range(0,4):
-    print("responda sim ou nao")
-    a = input(perguntas[x]).upper()
-    if a == "SIM":
-        cont += 1
-    else:
-        cont += 0
-
+for x in range(0,4): #O x vai rodar o for 4 vezes
+    while True: #estrutura caso o usuário não escreva corretamente
+        print("Responda sim/n ou nao/n \n")
+        a = input(perguntas[x]).upper() #transforma o resultado da pergunta em maiúsculo
+        if a == "SIM" or a == "S":
+            print("ok")
+            cont += 1 #adiciona + 1 ao contador 
+            break
+        elif a == "NAO" or a == "N":
+            print("ok")
+            cont += 0 #adiciona + 0 ao contador 
+            break
+        else:
+            print("por favor inserir corretamente!")
+            continue
 if cont == 2:
-    print("Você é considrado Suspeito!")
+    print("SUSPEITO")
 elif cont == 3:
-    print("Você é considerado Cumplíce!")
+    print("CÚMPLICE")
 elif cont == 4:
-    print("Você é o Assassino!!")
+    print("VOCÊ É O ASSASSINO")
 elif cont == 1 or cont == 0:
-    print("Você é considerado Inocente!")
+    print("INOCENTE")
+
+#HORA DA VERDADE
