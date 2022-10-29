@@ -10,9 +10,4 @@ for x in lista:
     if x % 2 == 0:
         print("numeros multiplos de 2 {}" .format(x))
 
-#desafio
-
-#peça quatro valores. calcule e imprima o volume da caixa retangualar informada
-#ultilizando a formula
-#volume = comprimento x largura x altura
 

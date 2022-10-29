@@ -1,14 +1,12 @@
-termo = int(input("informe o número: "))
-num1, num2 = 0, 1
-contador = 0
-while contador < termo:
-    num3 = num1 + num2
-    if num3 == termo:
-        print("termo encontrado")
-        break
+#solicite o nome do usuario
+#imprima na vertical em formato escada
 
-    num1 = num2
-    num2 = num3
-    contador += 1
+nome = input("Digite seu nome \n:")
+
+for x in nome:
+    print(x)
+    x = x[0:+1]
+
+print(len(nome))
 
  
