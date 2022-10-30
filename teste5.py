@@ -5,7 +5,10 @@
 #4 4 4 4
 #5 5 5 5 5 5
 
-numero = input("Digite um número!! \n:")
-str_numero = numero + " "
-int_numero = int(numero)
-print(int_numero * str_numero)
+def escada():
+    numero = input("Digite um número!! \n:")
+    str_numero = numero + " "
+    int_numero = int(numero)
+    print(int_numero * str_numero)
+
+escada()
